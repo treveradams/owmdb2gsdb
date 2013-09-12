@@ -24,14 +24,14 @@ def latlon2gs(lat, lon):
  
 	lon = lon + 180
 	lat = lat + 90
- 
+
 	grid += chr(ord('A') + int(lon / 20))
 	grid += chr(ord('A') + int(lat / 10))
 	grid += chr(ord('0') + int((lon % 20)/2))
 	grid += chr(ord('0') + int((lat % 10)/1))
 	grid += chr(ord('a') + int((lon - (int(lon/2)*2)) / (five60)))
 	grid += chr(ord('a') + int((lat - (int(lat/1)*1)) / (2.5/60)))
- 
+
 	return grid
 
 db_files = {}
