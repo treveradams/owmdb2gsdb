@@ -1,5 +1,5 @@
-Open WLAN Map Database to Grid-Square Database Convert Program (owmdb2gsdb)
-===========================================================================
+Open WLAN Map Database to Grid-Square Database Converter Program (owmdb2gsdb)
+============================================================================
 
 This program is designed to allow one to convert the Open WLAN Map
 Database to many more, much smaller Grid-Square Databases.
