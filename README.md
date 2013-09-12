@@ -12,6 +12,16 @@ KLUDGE ALERT!
 Yes, this is a kludge. It may get better. It does the job.
 
 
+BE A GOOD NETIZEN
+=================
+Please, be a good citizen. Do not download the database from the Open WLAN
+Map project more than once a week. It is updated nightly, so doing it multiple
+times a day would be counter productive. As it is hosted as generously by an
+individual, do not abuse the system. Go as long as you can between downloads.
+Certainly do not download it more than any guidelines given on the project's
+website. Thank you!
+
+
 HOW TO USE IT
 =============
 
