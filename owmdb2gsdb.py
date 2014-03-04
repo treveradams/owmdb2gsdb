@@ -47,7 +47,10 @@ line = f.readline() # Trash CSV header
 line = f.readline()
 while line:
 	words = line.split()
-	gs = latlon2gs(float(words[1]), float(words[2]))
+	try:
+		gs = latlon2gs(float(words[1]), float(words[2]))
+	except:
+		print line + "If the above line started with bssid, it is safe to ignore, if not contact the author of the program\n"
 	gs = gs[0:6]
 	try:
 		if(db_files[gs]):
@@ -60,10 +63,12 @@ while line:
 
 		if os.path.exists("./gsdb/" + gs + ".csv"):
 			db_files[gs] = open("./gsdb/" + gs + ".csv", "a+b")
+			db_files[gs].write(words[0] + "\t" + words[1] + "\t" + words[2] + "\n")
 		else:
 			db_files[gs] = open("./gsdb/" + gs + ".csv", "w+b")
 			db_files[gs].truncate
 			db_files[gs].write("bssid\tlat\tlon\n")
+			db_files[gs].write(words[0] + "\t" + words[1] + "\t" + words[2] + "\n")
 	line = f.readline()
 
 f.close()
